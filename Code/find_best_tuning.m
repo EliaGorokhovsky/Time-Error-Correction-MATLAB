@@ -11,13 +11,13 @@ DO_NORMAL_CORRECTION = 27;
 DO_INTERP_CORRECTION = 29;
 
 % Specify a particular algorithm to explore because this controls some parameters
-correction_method = DO_INTERP_CORRECTION;
+correction_method = 29;
 
 % Open a file for this correction method
-fid = fopen(strcat('tuning_out_', num2str(correction_method)), 'r');
+fid = fopen(strcat('../out/tuning_out_', num2str(correction_method)), 'r');
 %fid = fopen(strcat('tuning_out_revised', num2str(correction_method)), 'r');
 
-fid_out = fopen(strcat('best_tuning_out_', num2str(correction_method)), 'a+');
+fid_out = fopen(strcat('../out/best_tuning_out_', num2str(correction_method)), 'a+');
 
 % First line has correction method and obs_discard_width
 str1 = fgetl(fid);

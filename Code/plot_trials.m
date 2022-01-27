@@ -6,7 +6,7 @@ num_trials = 10;
 lines_per_case = 2*num_trials + 1;
 
 % Create an array with the following dimensions ddd(num_cases, 12)
-% THe 12 values are (obs_intvl, time_err_sd, method, trial, infl, loc, prior_rmse, ...
+% The 12 values are (obs_intvl, time_err_sd, method, trial, infl, loc, prior_rmse, ...
 %   prior_spread, post_rmse, post_spread, offset_rmse, perfect_offset_rmes)
 
 % Loop through the 5 different methods
@@ -17,14 +17,14 @@ for method_indx = 1:5
    method = method_vals(method_indx);
 
    % Open the file of the multicase output for this method
-   fid = fopen(['multi_case_out_', num2str(method)], 'r');
+   fid = fopen(['../out/multi_case_out_', num2str(method)], 'r');
 
    % First line has correction method and obs_discard_width
    str1 = fgetl(fid);
    c_method = str2num(str1(18:22));
    obs_discard_width = str2num(str1(41:end));
 
-   % Second and thire line have default info
+   % Second and third line have default info
    str2 = fgetl(fid);
    str3 = fgetl(fid);
 

@@ -27,7 +27,7 @@
 % This version is designed to work with the Lorenz-96 (or 63) class of models.
 
 % Start out by opening an output file; default name for now with append for safety
-fid = fopen('filter_out', 'a+');
+fid = fopen('../out/filter_out', 'a+');
 
 % Set the random number generator to repeat with a given series
 seed = 2; rng(seed);
@@ -214,13 +214,13 @@ fprintf(fid, '%i  %g %f %f %f \n', violations, sd_temp, median(median(rel_lin_di
 
 figure(1)
 fr_time(1:size(fr_truth, 2)) = (1:size(fr_truth, 2)) * DELTA_T;
-plot(fr_time(1:size(fr_truth, 2)), fr_truth(37, 1:size(fr_truth, 2)), '-*', 'color', [0.6 0.6 0.6]);
+fr_truth_plot = plot(fr_time(1:size(fr_truth, 2)), fr_truth(37, 1:size(fr_truth, 2)), '-*', 'color', [0.6 0.6 0.6]);
 hold on
 
-plot(da_time(1:num_times), truth(37, 1:num_times), 'k*', 'markersize', 14, 'linewidth', 3);
-plot(actual_time(1:num_times), true_obs(37, 1:num_times), 'g*', 'markersize', 14, 'linewidth', 3)
-plot(actual_time(1:num_times), lin_true_obs(37, 1:num_times), 'b*', 'markersize', 14, 'linewidth', 3)
-plot(actual_time(1:num_times), obs(37, 1:num_times), 'r*', 'markersize', 14, 'linewidth', 3)
+truth_plot = plot(da_time(1:num_times), truth(37, 1:num_times), 'k*', 'markersize', 14, 'linewidth', 3);
+true_obs_plot = plot(actual_time(1:num_times), true_obs(37, 1:num_times), 'g*', 'markersize', 14, 'linewidth', 3);
+lin_obs_plot = plot(actual_time(1:num_times), lin_true_obs(37, 1:num_times), 'b*', 'markersize', 14, 'linewidth', 3);
+obs_plot = plot(actual_time(1:num_times), obs(37, 1:num_times), 'r*', 'markersize', 14, 'linewidth', 3);
 
 % Make a pretty picture for the paper 
 % Done for obs_intvl 60, time_err_sd 0.2
@@ -228,19 +228,21 @@ axis([369.1 373 -10 8]);
 set(gca, 'linewidth', 2, 'fontsize', 18');
 xlabel('Time, non-dimensional');
 ylabel('Lorenz-96 Variable 1');
-hl = legend('True Trajectory', 'Truth, Reported Time', 'Truth, Observed Time', 'Linearly Extrapolated', 'Observation', 'location', 'se');
+hl = legend('True Trajectory', 'Truth, Reported Time', 'Truth, Observed Time', 'Linearly Extrapolated', 'Observation', 'location', 'southeast');
 set(hl, 'fontsize', 14);
 
-% Plot the linear tangent line from the black truth to the extrapoloated observation
+
+% % Plot the linear tangent line from the black truth to the extrapoloated observation
 for i = 1:num_times
    xvv = [da_time(i) actual_time(i)];
    yvv = [truth(37, i), lin_true_obs(37, i)];
-   plot(xvv, yvv, 'b-', 'linewidth', 2); 
+   plot(xvv, yvv, 'b-', 'linewidth', 2, 'HandleVisibility', 'off'); 
 end
 
 print -dpng obs_time_series.png
 
-stop
+return
+%stop
 
 
 

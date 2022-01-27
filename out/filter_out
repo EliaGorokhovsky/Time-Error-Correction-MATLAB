@@ -1,0 +1,140 @@
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+1.000000 0.150000 2.700950 1.959428 1.889880 0.888158 0.113180 
+1.000000 0.175000 2.779001 1.931603 1.956445 0.866648 0.121949 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 
+correction_method  29 
+DELTA_T 0.010000  MODEL_SIZE 40   FORCING 8.000000  
+num_times 1100  skipping 100 
+obs_intvl 60    obs_err_var 1.000000    time_err_sd 0.200000 
+ens_size 80    NUM_INTERP 1  obs_discard_width -1
+1  2.81514 0.480707 3.704597 9685.000989 

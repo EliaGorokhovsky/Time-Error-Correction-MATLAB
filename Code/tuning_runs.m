@@ -1,4 +1,4 @@
-% Branched from mulit_case_assimilation.m 13 April 2020
+% Branched from multi_case_assimilation.m 13 April 2020
 % Runs the tuning cases for a given method
 % Outputs a file with all the cases plus a file with the best case from prior and posterior RMSEs
 
@@ -16,10 +16,10 @@ DO_NORMAL_CORRECTION = 27;
 DO_INTERP_CORRECTION = 29;
 
 % Specify a particular algorithm to explore because this controls some parameters
-correction_method = DO_INTERP_CORRECTION;
+correction_method = DO_POSSIBLE_CORRECTION;
 
 % Open a file for this correction method
-fid = fopen(strcat('tuning_out_', num2str(correction_method)), 'a+');
+fid = fopen(strcat('../out/tuning_out_', num2str(correction_method)), 'a+');
 
 % Set up the optimal obs_discard_width for DO_POSSIBLE_CORRECTION
 if(correction_method == DO_POSSIBLE_CORRECTION)

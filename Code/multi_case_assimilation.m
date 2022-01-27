@@ -14,10 +14,10 @@ DO_INTERP_CORRECTION = 29;
 
 
 % Specify a particular algorithm to explore because this controls some parameters
-correction_method = DO_POSSIBLE_CORRECTION;
+correction_method = 12;
 
 % Open a file for this correction method
-fid = fopen(strcat('multi_case_out_', num2str(correction_method)), 'a+');
+fid = fopen(strcat('../out/multi_case_out_', num2str(correction_method)), 'a+');
 
 % Standard will be to do 10 trials
 num_trials = 10;
@@ -29,7 +29,7 @@ else
 end
 
 % Open the input file with optimal cases for posterior error
-in_file_str = ['best_tuning_out_', num2str(correction_method)];
+in_file_str = ['../out/best_tuning_out_', num2str(correction_method)];
 r = load(in_file_str);
 
 fprintf(fid, 'correction_method %i   obs_discard_width %i \n', correction_method, obs_discard_width);
