@@ -27,5 +27,4 @@ five each for the state error and the time offset error for the 5 different case
 different observing networks. A subset of these files are included in the manuscript.
 
 
-Results here were run with matlabe 2016b but also confirmed with matlab 2021a. Note that time_series_plot 
-does not work with 2021a. 
+Results here were run with matlabe 2016b but also confirmed with matlab 2021b. 
