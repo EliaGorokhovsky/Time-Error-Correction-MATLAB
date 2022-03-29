@@ -226,12 +226,12 @@ obs_plot = plot(actual_time(1:num_times), obs(37, 1:num_times), 'r*', 'markersiz
 % Done for obs_intvl 60, time_err_sd 0.2
 axis([369.1 373 -10 8]);
 set(gca, 'linewidth', 2, 'fontsize', 18');
+set(gcf, 'units', 'centimeters');
+set(gcf, 'position', [0, 0, 16, 13]);
 xlabel('Time, non-dimensional');
 ylabel('Lorenz-96 Variable 1');
 hl = legend('True Trajectory', 'Truth, Reported Time', 'Truth, Observed Time', 'Linearly Extrapolated', 'Observation', 'location', 'southeast');
-set(hl, 'fontsize', 14);
-
-
+set(hl, 'fontsize', 11);
 % % Plot the linear tangent line from the black truth to the extrapoloated observation
 for i = 1:num_times
    xvv = [da_time(i) actual_time(i)];
@@ -239,7 +239,10 @@ for i = 1:num_times
    plot(xvv, yvv, 'b-', 'linewidth', 2, 'HandleVisibility', 'off'); 
 end
 
-print -dpng obs_time_series.png
+exportgraphics(gca, strcat('../raw_figures/obs_time_series.png'), 'Resolution', 300);
+
+%print -dpng ../raw_figures/obs_time_series.png
+
 
 return
 %stop
@@ -489,6 +492,8 @@ for i = 1:min(4, MODEL_SIZE)
    plot(truth(i, 1:num_times), 'k', 'linewidth', 2);
 end
 end
+
+
 
 
 % Plot the actual and estimated offset mean

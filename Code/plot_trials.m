@@ -148,7 +148,7 @@ for oi_index = 1:5
          indx = find(rmse_data(:, 1) == oi & rmse_data(:, 3) == method & rmse_data(:, 4) == trial);
          x = rmse_data(indx, :);
 
-         % Avoid that nasty log 0 problem by moving the 0 results have a value of 0.0625
+         % Avoid that nasty log 0 problem by moving the 0 results have a value of 0.00625
          % Will need to note this in caption and relabel the tick mark
          x(:, 2) = max(x(:, 2), 0.00625);
 
@@ -164,10 +164,13 @@ for oi_index = 1:5
 
          set(gca, 'XTICK', xt);
          set(gca, 'linewidth', 2);
-         set(gca, 'fontsize', 16);
+         set(gca, 'fontsize', 12);
+         set(gcf, 'units', 'centimeters');
+         set(gcf, 'position', [0, 0, 18, 14]);
          ylabel 'RMSE of Ensemble Mean';
          xlabel 'Time Error Standard Deviation';
          title(['Analysis Period ', num2str(oi * 0.01)]);
+         
          hold on
 
          % Can also do separate plots of the errors in the estimate of the time offset
@@ -186,16 +189,21 @@ for oi_index = 1:5
 
          set(gca, 'XTICK', xt);
          set(gca, 'linewidth', 2);
-         set(gca, 'fontsize', 16);
+         set(gca, 'fontsize', 12);
+         set(gcf, 'units', 'centimeters');
+         set(gcf, 'position', [0, 0, 18, 14]);
          xlabel 'Time Error Standard Deviation';
          ylabel 'Ensemble Mean Time Offset RMSE';
          title(['Analysis Period ', num2str(oi * 0.01)]);
+         
          hold on
 
       end
       %--------------- Plot of all trials ------------
 
    end
+   
+
    
 end
 
@@ -216,10 +224,10 @@ end
 
 for i = 1:5
    figure(i);
-   print(strcat('RMSE_Period_', num2str(obs_intvl_vals(i))), '-dpng');
+   exportgraphics(gca, strcat('../raw_figures/RMSE_Period_', string(oi_vals(i)), '.png'), 'Resolution', 300);
 
    figure(i + 5);
-   print(strcat('RMSE_Tau_', num2str(obs_intvl_vals(i))), '-dpng');
+   exportgraphics(gca, strcat('../raw_figures/RMSE_Tau_', string(oi_vals(i)), '.png'), 'Resolution', 300);
 end
 
 
